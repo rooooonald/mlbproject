@@ -1,0 +1,44 @@
+.notification {
+  position: fixed;
+  height: 5rem;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  animation: popup 1s forwards normal;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.loading,
+.success,
+.error {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.loading {
+  background-color: gray;
+}
+
+.success {
+  background-color: #17ae8f;
+}
+
+.error {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+@keyframes popup {
+  from {
+    transform: translateY(5rem);
+  }
+
+  to {
+    transform: translateY(-1rem);
+  }
+}

@@ -1,0 +1,60 @@
+.fav {
+  width: 75px;
+  position: relative;
+  cursor: pointer;
+}
+
+.fav svg {
+  opacity: 0.35;
+}
+
+.fav p {
+  position: absolute;
+  width: 75px;
+  font-size: 0.6rem;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.score {
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.score p {
+  margin: 0;
+  font-size: 96px;
+}
+
+.scoreboard {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .scoreboard {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .score {
+    width: auto;
+  }
+
+  .score p {
+    font-size: 80px;
+  }
+}

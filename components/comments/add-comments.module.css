@@ -1,0 +1,23 @@
+.comment-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.comment-box {
+  height: 100px;
+  padding: 10px;
+
+}
+
+.submit {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.submit label {
+  text-align: right;
+}

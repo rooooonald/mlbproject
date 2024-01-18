@@ -1,0 +1,42 @@
+.disabled {
+  opacity: 0.3;
+}
+
+.highlight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight img:hover {
+  transform: scale(1.2);
+}
+
+.highlight-control {
+  display: flex;
+  justify-content: center;
+}
+
+.highlight-control button {
+  width: 50px;
+  margin: 0 5px;
+}
+
+.highlight-headline {
+  margin: 5px 0 20px 0;
+  padding: 0;
+}
+
+.highlight-thumbnail {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.highlight-thumbnail img {
+  width: 100%;
+  height: auto;
+  transform: scale(1.05);
+  transition: all 2.5s;
+}
