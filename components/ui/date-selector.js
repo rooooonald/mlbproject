@@ -20,7 +20,8 @@ export default function DateSelector({ onSubmit, onCloseForm }) {
           ? today.getMonth() + 1
           : `0${today.getMonth() + 1}`;
       dayInputRef.current.value =
-        today.getDate() > 9 ? today.getDate() : `0${today.getDate() + 1}`;
+        today.getDate() > 9 ? today.getDate() : `0${today.getDate()}`;
+      console.log(today.getDate());
       return;
     }
 
