@@ -9,12 +9,11 @@ export default function Team({ homeAway, name, record, logoId }) {
     <div className={styles.team}>
       <div className={styles["home-away"]}>{homeAway}</div>
       <div className={styles["team-info"]}>
-        <div>
-          <h1>{name}</h1>
-        </div>
-        <div>
+        <h1>{name}</h1>
+
+        <p>
           {record.wins} - {record.losses}
-        </div>
+        </p>
       </div>
       <div className={styles.logo}>
         <Image src={logoPath} alt={name} width={0} height={0} />

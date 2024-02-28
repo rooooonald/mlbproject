@@ -61,7 +61,6 @@ export default function Highlights({ highlights }) {
 
       <div className={styles["highlight-control"]}>
         <button
-          className={prevDisabled ? styles.disabled : undefined}
           onClick={() => changeHighlightIndex(-1)}
           disabled={prevDisabled}
         >
@@ -70,11 +69,7 @@ export default function Highlights({ highlights }) {
         <button onClick={playHighlightHandler}>
           <FontAwesomeIcon icon={faPlay} />
         </button>
-        <button
-          className={nextDisabled ? styles.disabled : undefined}
-          onClick={() => changeHighlightIndex(1)}
-          disabled={nextDisabled}
-        >
+        <button onClick={() => changeHighlightIndex(1)} disabled={nextDisabled}>
           <FontAwesomeIcon icon={faForwardStep} />
         </button>
       </div>

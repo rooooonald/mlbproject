@@ -9,17 +9,19 @@ import { faBaseball } from "@fortawesome/free-solid-svg-icons";
 export default function Scoreboard({ homeScore, awayScore, matchData }) {
   const favoriteCtx = useContext(FavoriteContext);
 
-  const isFav = favoriteCtx.isFavorite(matchData.gamePk);
+  const { gamePk, gameDate, teams, venue } = matchData;
+
+  const isFav = favoriteCtx.isFavorite(gamePk);
 
   function clickHandler() {
     if (isFav) {
-      favoriteCtx.removeFavorite(matchData.gamePk);
+      favoriteCtx.removeFavorite(gamePk);
     } else {
       favoriteCtx.addFavorite({
-        gamePk: matchData.gamePk,
-        gameDate: matchData.gameDate,
-        teams: matchData.teams,
-        venue: matchData.venue,
+        gamePk,
+        gameDate,
+        teams: teams,
+        venue: venue,
       });
     }
   }

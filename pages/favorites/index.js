@@ -2,7 +2,6 @@ import { useContext } from "react";
 import Head from "next/head";
 
 import FavoriteContext from "@/store/favorite-context";
-
 import FavMatchList from "@/components/favorites/match-list";
 
 export default function FavoritePage() {

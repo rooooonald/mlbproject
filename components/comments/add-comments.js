@@ -19,29 +19,27 @@ export default function AddComments({ submitData }) {
 
   return (
     <>
-      <div>
-        <div className={styles["comment-group"]}>
-          <label htmlFor="comments">LEAVE YOUR COMMENT</label>
-          <textarea
-            className={styles["comment-box"]}
-            id="comments"
-            name="comments"
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-          ></textarea>
-        </div>
-        <div className={styles.submit}>
-          <label htmlFor="name">DISPLAY NAME</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-          <button onClick={submitHandler}>Submit</button>
-        </div>
+      <div className={styles["comment-group"]}>
+        <label htmlFor="comments">LEAVE YOUR COMMENT</label>
+        <textarea
+          className={styles["comment-box"]}
+          id="comments"
+          name="comments"
+          value={comment}
+          onChange={(e) => setComment(e.target.value)}
+        ></textarea>
+      </div>
+      <div className={styles.submit}>
+        <label htmlFor="name">DISPLAY NAME</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+        <button onClick={submitHandler}>Submit</button>
       </div>
     </>
   );

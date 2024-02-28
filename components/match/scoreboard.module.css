@@ -1,21 +1,9 @@
-.fav {
-  width: 75px;
-  position: relative;
-  cursor: pointer;
-}
-
-.fav svg {
-  opacity: 0.35;
-}
-
-.fav p {
-  position: absolute;
-  width: 75px;
-  font-size: 0.6rem;
-  margin: auto;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.scoreboard {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .score {
@@ -34,12 +22,24 @@
   font-size: 96px;
 }
 
-.scoreboard {
-  height: 150px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.fav {
+  width: 75px;
+  position: relative;
+  cursor: pointer;
+}
+
+.fav svg {
+  opacity: 0.35;
+}
+
+.fav p {
+  position: absolute;
+  width: 75px;
+  font-size: 0.6rem;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 768px) {

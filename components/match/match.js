@@ -8,8 +8,7 @@ import Comments from "../comments/comments";
 import styles from "./match.module.css";
 
 export default function Match({ match }) {
-  const homeTeam = match.teams.home;
-  const awayTeam = match.teams.away;
+  const { home: homeTeam, away: awayTeam } = match.teams;
   const venue = match.venue.name;
   const matchId = match.gamePk;
 
